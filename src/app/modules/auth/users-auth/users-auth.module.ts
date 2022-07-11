@@ -4,8 +4,8 @@ import { UsersAuthController } from 'src/app/controllers/auth/users-auth/users-a
 import { User } from 'src/app/models/users/User.model';
 import { UsersAuthService } from 'src/app/services/auth/users-auth/users-auth.service';
 import { UsersService } from 'src/app/services/users/users.service';
-import { UserAuthSessionSerializer } from 'src/app/utils/auth/users-auth/users-auth-session.serializer';
-import { UsersAuthPassportStrategy } from 'src/app/utils/auth/users-auth/users-auth.passport-strategy';
+import { UserAuthSessionSerializer } from 'src/app/utils/auth/users-auth/session-serializers/users-auth-session.serializer';
+import { UsersAuthPassportStrategy } from 'src/app/utils/auth/users-auth/strategies/users-auth.passport-strategy';
 import { UsersModule } from '../../users/users.module';
 
 @Module({

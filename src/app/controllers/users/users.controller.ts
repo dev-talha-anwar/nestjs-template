@@ -4,7 +4,7 @@ import { UpdateUserDto } from 'src/app/dtos/users/update-user.dto';
 import { User } from 'src/app/models/users/User.model';
 import { DatabaseExistsPipe } from 'src/app/pipes/databaseExists.pipe';
 import { UsersService } from 'src/app/services/users/users.service';
-import { UserAuthenticatedGuard } from 'src/app/utils/auth/users-auth/users-authenticated.guard';
+import { UserAuthenticatedGuard } from 'src/app/utils/auth/users-auth/guards/users-authenticated.guard';
 
 @Controller('users')
 export class UsersController {
