@@ -5,12 +5,14 @@ import { DatabaseModule } from '../database/database.module';
 import { AppController } from 'src/app/controllers/app/app.controller';
 import { AppService } from 'src/app/services/app/app.service';
 import { UsersAuthModule } from '../auth/users-auth/users-auth.module';
+import { PassportModule } from '@nestjs/passport';
 
 @Module({
   imports: [
     DatabaseModule.forRoot(),
     UsersModule,
-    UsersAuthModule
+    UsersAuthModule,
+    PassportModule.register({session: true})
   ],
   controllers: [AppController],
   providers: [
