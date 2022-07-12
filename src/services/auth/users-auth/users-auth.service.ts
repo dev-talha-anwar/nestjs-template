@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { checkHash } from 'src/app/utils/auth/bcrypt';
+import { checkHash } from 'src/utils/auth/bcrypt';
 import { UsersService } from '../../users/users.service';
 
 @Injectable()

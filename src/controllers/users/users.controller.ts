@@ -1,10 +1,10 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe, UseGuards } from '@nestjs/common';
-import { CreateUserDto } from 'src/app/dtos/users/create-user.dto';
-import { UpdateUserDto } from 'src/app/dtos/users/update-user.dto';
-import { User } from 'src/app/models/users/User.model';
-import { DatabaseExistsPipe } from 'src/app/pipes/databaseExists.pipe';
-import { UsersService } from 'src/app/services/users/users.service';
-import { UserAuthenticatedGuard } from 'src/app/utils/auth/users-auth/guards/users-authenticated.guard';
+import { CreateUserDto } from 'src/dtos/users/create-user.dto';
+import { UpdateUserDto } from 'src/dtos/users/update-user.dto';
+import { User } from 'src/models/users/User.model';
+import { DatabaseExistsPipe } from 'src/pipes/databaseExists.pipe';
+import { UsersService } from 'src/services/users/users.service';
+import { UserAuthenticatedGuard } from 'src/utils/auth/users-auth/guards/users-authenticated.guard';
 
 @Controller('users')
 export class UsersController {
