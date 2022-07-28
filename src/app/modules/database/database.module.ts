@@ -19,6 +19,7 @@ export class DatabaseModule {
             password: process.env.DATABASE_PASSWORD,
             database: process.env.DATABASE_NAME,
             synchronize: false,
+            autoLoadModels: true,
             query:{
                 raw:true, 
             },
