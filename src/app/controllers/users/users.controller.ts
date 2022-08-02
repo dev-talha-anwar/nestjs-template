@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe, UseGuards } from '@nestjs/common';
 import { CreateUserDto } from 'src/app/dtos/users/create-user.dto';
 import { UpdateUserDto } from 'src/app/dtos/users/update-user.dto';
-import { User } from 'src/app/models/users/User.model';
+import { User } from 'src/app/models/User.model';
 import { DatabaseExistsPipe } from 'src/app/pipes/databaseExists.pipe';
 import { UsersService } from 'src/app/services/users/users.service';
 import { UsersAuthJwtGuard } from 'src/app/utils/auth/users-auth/guards/users-auth-jwt.guard';

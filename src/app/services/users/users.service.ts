@@ -1,7 +1,7 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { UserEntity } from 'src/app/entities/users/user.entity';
-import { User } from 'src/app/models/users/User.model';
+import { UserEntity } from 'src/app/serializers/users/user.entity';
+import { User } from 'src/app/models/User.model';
 import { hashPassword } from 'src/app/utils/auth/bcrypt';
 
 

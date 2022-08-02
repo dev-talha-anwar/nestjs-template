@@ -1,7 +1,7 @@
 import { DynamicModule, Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Dialect } from 'sequelize/types';
-import { User } from 'src/app/models/users/User.model';
+import { User } from 'src/app/models/User.model';
 require('dotenv').config()
 
 @Module({})
